@@ -1,0 +1,16 @@
+/* Voeg een boog toe boven de footer */
+.footer {
+  position: relative;
+  background-color: #D9AD6D; /* Achtergrondkleur van de footer */
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Pas deze waarde aan om de boog aan te passen */
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc; /* Kleur en dikte van de booglijn */
+  border-radius: 50%; /* Maakt de lijn gebogen */
+  height: 40px; /* Hoogte van de boog */
+}
